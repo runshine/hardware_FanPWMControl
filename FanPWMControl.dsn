@@ -1,0 +1,439 @@
+(pcb E:\KicadProject\FanPWMControl\FanPWMControl\FanPWMControl.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(5.1.10)-1")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  97155 -106045  15875 -106045  15875 -50800  97155 -50800
+            97155 -106045)
+    )
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component FanPWMControlFooter:0.91_OLED_Module
+      (place U6 51975 -49530 front 0 (PN 0.91_OLED_Module))
+    )
+    (component FanPWMControlFooter:DHT_Module
+      (place U5 81915 -63500 front 0 (PN DHT11_Module))
+    )
+    (component FanPWMControlFooter:DM02
+      (place U4 52070 -66040 front 0 (PN DM02))
+    )
+    (component FanPWMControlFooter:5V_3.3V_Coventer
+      (place U3 69215 -88900 front 90 (PN 5V_3.3V_Coventer))
+      (place U1 50800 -88900 front 90 (PN 5V_3.3V_Coventer))
+    )
+    (component "FanPWMControlFooter:ESP32-DOIT-DEVKIT"
+      (place U2 33075 -52915 front 0 (PN "DOIT-ESP32-DEVKIT-V1"))
+    )
+    (component Resistor_SMD:R_0805_2012Metric
+      (place R12 34275 -60460 front 0 (PN 3.3K))
+      (place R11 34505 -78685 front 0 (PN 10K))
+      (place R10 34235 -66480 front 0 (PN 3.3K))
+      (place R9 29825 -69430 front 0 (PN 10K))
+      (place R8 34235 -69430 front 0 (PN 3.3K))
+      (place R7 29825 -72380 front 0 (PN 10K))
+      (place R6 34275 -63410 front 0 (PN 3.3K))
+      (place R5 34290 -72390 front 0 (PN 10K))
+      (place R4 34505 -75735 front 0 (PN 3.3K))
+      (place R3 34290 -81915 front 0 (PN 10K))
+      (place R2 29825 -66480 front 0 (PN 3.3K))
+      (place R1 29845 -85140 front 0 (PN 10K))
+    )
+    (component Connector:FanPinHeader_1x04_P2.54mm_Vertical
+      (place FAN_INPUT1 90805 -68580 front 270 (PN Fan_4pin))
+      (place FAN7 90805 -83820 front 270 (PN Fan_4pin))
+      (place FAN6 90170 -99695 front 180 (PN Fan_4pin))
+      (place FAN5 77470 -99695 front 180 (PN Fan_4pin))
+      (place FAN4 64770 -99695 front 180 (PN Fan_4pin))
+      (place FAN3 52070 -99695 front 180 (PN Fan_4pin))
+      (place FAN2 39370 -99695 front 180 (PN Fan_4pin))
+      (place FAN1 26670 -99695 front 180 (PN Fan_4pin))
+    )
+    (component Capacitor_SMD:C_0805_2012Metric
+      (place C7 29830 -78945 front 0 (PN 0.1nF))
+      (place C6 29830 -81955 front 0 (PN 0.1nF))
+      (place C5 29845 -57480 front 0 (PN 0.1nF))
+      (place C4 34295 -57480 front 0 (PN 0.1nF))
+      (place C3 29845 -60490 front 0 (PN 0.1nF))
+      (place C2 29830 -75935 front 0 (PN 0.1nF))
+      (place C1 29845 -63500 front 0 (PN 100uF))
+    )
+  )
+  (library
+    (image FanPWMControlFooter:0.91_OLED_Module
+      (outline (path signal 120  34290 -3810  34290 -13970))
+      (outline (path signal 120  -2540 -3810  34290 -3810))
+      (outline (path signal 120  -2540 -13970  34290 -13970))
+      (outline (path signal 120  -2540 -3810  -2540 -13970))
+      (pin Round[A]Pad_1524_um 4 -1270 -12700)
+      (pin Round[A]Pad_1524_um 3 -1270 -10160)
+      (pin Round[A]Pad_1524_um 2 -1270 -7620)
+      (pin Round[A]Pad_1524_um 1 -1270 -5080)
+    )
+    (image FanPWMControlFooter:DHT_Module
+      (outline (path signal 120  1270 -2540  -6350 -2540))
+      (outline (path signal 120  1270 -15240  1270 -2540))
+      (outline (path signal 120  -6350 -15240  1270 -15240))
+      (outline (path signal 120  -6350 -2540  -6350 -15240))
+      (pin Round[A]Pad_1524_um 3 -1270 -11430)
+      (pin Round[A]Pad_1524_um 2 -1270 -8890)
+      (pin Round[A]Pad_1524_um 1 -1270 -6350)
+    )
+    (image FanPWMControlFooter:DM02
+      (outline (path signal 200  20320 2000  -2540 2000))
+      (outline (path signal 200  20320 -14700  20320 2000))
+      (outline (path signal 200  -2540 -14700  20320 -14700))
+      (outline (path signal 200  -2540 2000  -2540 -14700))
+      (pin Round[A]Pad_1700_um (rotate 180) 4 17780 -2540)
+      (pin "Oval[T][-1270,0]Pad_4240x1700_um" (rotate 180) 4@1 17780 -2540)
+      (pin Round[A]Pad_1700_um (rotate 180) 4@2 17780 0)
+      (pin "Oval[T][-1270,0]Pad_4240x1700_um" (rotate 180) 4@3 17780 0)
+      (pin Round[A]Pad_1700_um (rotate 180) 3 17780 -12700)
+      (pin "Oval[T][-1270,0]Pad_4240x1700_um" (rotate 180) 3@1 17780 -12700)
+      (pin Round[A]Pad_1700_um (rotate 180) 3@2 17780 -10160)
+      (pin "Oval[T][-1270,0]Pad_4240x1700_um" (rotate 180) 3@3 17780 -10160)
+      (pin "Oval[T][-1270,0]Pad_4240x1700_um" 2 0 -12700)
+      (pin Round[A]Pad_1700_um 2@1 0 -10160)
+      (pin Round[A]Pad_1700_um 2@2 0 -12700)
+      (pin "Oval[T][-1270,0]Pad_4240x1700_um" 2@3 0 -10160)
+      (pin Round[A]Pad_1700_um 1 0 -2540)
+      (pin "Oval[T][-1270,0]Pad_4240x1700_um" 1@1 0 -2540)
+      (pin "Oval[T][-1270,0]Pad_4240x1700_um" 1@2 0 0)
+      (pin Round[A]Pad_1700_um 1@3 0 0)
+    )
+    (image FanPWMControlFooter:5V_3.3V_Coventer
+      (outline (path signal 120  -5080 1270  -5080 0))
+      (outline (path signal 120  7620 1270  -5080 1270))
+      (outline (path signal 120  7620 0  7620 1270))
+      (outline (path signal 120  7620 -16510  7620 0))
+      (outline (path signal 120  -5080 -16510  7620 -16510))
+      (outline (path signal 120  -5080 0  -5080 -16510))
+      (pin Round[A]Pad_1524_um 12 6350 -1270)
+      (pin Round[A]Pad_1524_um 11 6350 -3810)
+      (pin Round[A]Pad_1524_um 10 6350 -6350)
+      (pin Round[A]Pad_1524_um 9 6350 -8890)
+      (pin Round[A]Pad_1524_um 8 6350 -11430)
+      (pin Round[A]Pad_1524_um 7 6350 -13970)
+      (pin Round[A]Pad_1524_um 6 -3810 -13970)
+      (pin Round[A]Pad_1524_um 5 -3810 -11430)
+      (pin Round[A]Pad_1524_um 4 -3810 -8890)
+      (pin Round[A]Pad_1524_um 3 -3810 -6350)
+      (pin Round[A]Pad_1524_um 2 -3810 -3810)
+      (pin Round[A]Pad_1524_um 1 -3810 -1270)
+    )
+    (image "FanPWMControlFooter:ESP32-DOIT-DEVKIT"
+      (outline (path signal 150  -13970 -40640  -13970 -1270))
+      (outline (path signal 150  13970 -1270  13970 -40640))
+      (outline (path signal 150  -13970 -1270  13970 -1270))
+      (outline (path signal 120  -15240 0  15240 0))
+      (outline (path signal 120  15240 0  15240 -41910))
+      (outline (path signal 120  15240 -41910  -15240 -41910))
+      (outline (path signal 120  -15240 -41910  -15240 0))
+      (outline (path signal 150  13970 -40640  -13970 -40640))
+      (pin Round[A]Pad_1524_um 15 -12700 -38100)
+      (pin Round[A]Pad_1524_um 16 12700 -38100)
+      (pin Round[A]Pad_1524_um 14 -12700 -35560)
+      (pin Round[A]Pad_1524_um 30 12700 -2540)
+      (pin Round[A]Pad_1524_um 29 12700 -5080)
+      (pin Round[A]Pad_1524_um 28 12700 -7620)
+      (pin Round[A]Pad_1524_um 27 12700 -10160)
+      (pin Round[A]Pad_1524_um 26 12700 -12700)
+      (pin Round[A]Pad_1524_um 25 12700 -15240)
+      (pin Round[A]Pad_1524_um (rotate 90) 24 12700 -17780)
+      (pin Round[A]Pad_1524_um 23 12700 -20320)
+      (pin Round[A]Pad_1524_um 22 12700 -22860)
+      (pin Round[A]Pad_1524_um 21 12700 -25400)
+      (pin Round[A]Pad_1524_um 20 12700 -27940)
+      (pin Round[A]Pad_1524_um 19 12700 -30480)
+      (pin Round[A]Pad_1524_um 18 12700 -33020)
+      (pin Round[A]Pad_1524_um 17 12700 -35560)
+      (pin Round[A]Pad_1524_um 13 -12700 -33020)
+      (pin Round[A]Pad_1524_um 12 -12700 -30480)
+      (pin Round[A]Pad_1524_um 11 -12700 -27940)
+      (pin Round[A]Pad_1524_um 10 -12700 -25400)
+      (pin Round[A]Pad_1524_um 9 -12700 -22860)
+      (pin Round[A]Pad_1524_um 8 -12700 -20320)
+      (pin Round[A]Pad_1524_um 7 -12700 -17780)
+      (pin Round[A]Pad_1524_um 6 -12700 -15240)
+      (pin Round[A]Pad_1524_um 5 -12700 -12700)
+      (pin Round[A]Pad_1524_um 4 -12700 -10160)
+      (pin Round[A]Pad_1524_um 3 -12700 -7620)
+      (pin Round[A]Pad_1524_um 2 -12700 -5080)
+      (pin Round[A]Pad_1524_um 1 -12700 -2540)
+    )
+    (image Resistor_SMD:R_0805_2012Metric
+      (outline (path signal 100  -1000 -625  -1000 625))
+      (outline (path signal 100  -1000 625  1000 625))
+      (outline (path signal 100  1000 625  1000 -625))
+      (outline (path signal 100  1000 -625  -1000 -625))
+      (outline (path signal 120  -227.064 735  227.064 735))
+      (outline (path signal 120  -227.064 -735  227.064 -735))
+      (outline (path signal 50  -1680 -950  -1680 950))
+      (outline (path signal 50  -1680 950  1680 950))
+      (outline (path signal 50  1680 950  1680 -950))
+      (outline (path signal 50  1680 -950  -1680 -950))
+      (pin RoundRect[T]Pad_1025x1400_250.95_um 2 912.5 0)
+      (pin RoundRect[T]Pad_1025x1400_250.95_um 1 -912.5 0)
+    )
+    (image Connector:FanPinHeader_1x04_P2.54mm_Vertical
+      (outline (path signal 120  -1350 2600  4400 2600))
+      (outline (path signal 120  5750 2550  8950 2550))
+      (outline (path signal 120  8950 2550  8950 -3400))
+      (outline (path signal 120  8950 -3400  -1350 -3400))
+      (outline (path signal 120  -1350 -3400  -1350 2600))
+      (outline (path signal 100  5100 -3300  5100 -2300))
+      (outline (path signal 100  5100 -2300  0 -2300))
+      (outline (path signal 100  0 -2300  0 -3300))
+      (outline (path signal 100  5750 2500  8850 2500))
+      (outline (path signal 100  8850 2500  8850 -3300))
+      (outline (path signal 100  8850 -3300  -1200 -3300))
+      (outline (path signal 100  -1200 -3300  -1250 -3300))
+      (outline (path signal 100  -1250 -3300  -1250 2500))
+      (outline (path signal 100  -1250 2500  4400 2500))
+      (outline (path signal 120  0 -3300  0 -2290))
+      (outline (path signal 120  0 -2290  5080 -2290))
+      (outline (path signal 120  5080 -2290  5080 -3300))
+      (outline (path signal 50  -1750 -3800  -1750 3200))
+      (outline (path signal 50  -1750 -3800  9350 -3800))
+      (outline (path signal 50  9350 3200  -1750 3200))
+      (outline (path signal 50  9350 3200  9350 -3800))
+      (pin Oval[A]Pad_2030x1730_um (rotate 90) 4 7620 0)
+      (pin Oval[A]Pad_2030x1730_um (rotate 90) 3 5080 0)
+      (pin Oval[A]Pad_2030x1730_um (rotate 90) 2 2540 0)
+      (pin Rect[A]Pad_2030x1730_um (rotate 90) 1 0 0)
+      (keepout "" (circle F.Cu 1100 5080 2160))
+      (keepout "" (circle B.Cu 1100 5080 2160))
+    )
+    (image Capacitor_SMD:C_0805_2012Metric
+      (outline (path signal 100  -1000 -625  -1000 625))
+      (outline (path signal 100  -1000 625  1000 625))
+      (outline (path signal 100  1000 625  1000 -625))
+      (outline (path signal 100  1000 -625  -1000 -625))
+      (outline (path signal 120  -261.252 735  261.252 735))
+      (outline (path signal 120  -261.252 -735  261.252 -735))
+      (outline (path signal 50  -1700 -980  -1700 980))
+      (outline (path signal 50  -1700 980  1700 980))
+      (outline (path signal 50  1700 980  1700 -980))
+      (outline (path signal 50  1700 -980  -1700 -980))
+      (pin RoundRect[T]Pad_1000x1450_250.951_um 2 950 0)
+      (pin RoundRect[T]Pad_1000x1450_250.951_um 1 -950 0)
+    )
+    (padstack Round[A]Pad_1524_um
+      (shape (circle F.Cu 1524))
+      (shape (circle B.Cu 1524))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1700_um
+      (shape (circle F.Cu 1700))
+      (shape (circle B.Cu 1700))
+      (attach off)
+    )
+    (padstack "Oval[T][-1270,0]Pad_4240x1700_um"
+      (shape (path F.Cu 1700  -2540 0  0 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_2030x1730_um
+      (shape (path F.Cu 1730  -150 0  150 0))
+      (shape (path B.Cu 1730  -150 0  150 0))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1000x1450_250.951_um
+      (shape (polygon F.Cu 0  293.577 722.138  335.83 710.817  375.475 692.33  411.308 667.24
+            442.24 636.308  467.33 600.476  485.817 560.83  497.138 518.577
+            500.951 475  500.951 -475  497.138 -518.577  485.817 -560.83
+            467.33 -600.475  442.24 -636.308  411.308 -667.24  375.476 -692.33
+            335.83 -710.817  293.577 -722.138  250 -725.951  -250 -725.951
+            -293.577 -722.138  -335.83 -710.817  -375.475 -692.33  -411.308 -667.24
+            -442.24 -636.308  -467.33 -600.476  -485.817 -560.83  -497.138 -518.577
+            -500.951 -475  -500.951 475  -497.138 518.577  -485.817 560.83
+            -467.33 600.475  -442.24 636.308  -411.308 667.24  -375.476 692.33
+            -335.83 710.817  -293.577 722.138  -250 725.951  250 725.951
+            293.577 722.138))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1025x1400_250.95_um
+      (shape (polygon F.Cu 0  306.078 697.139  348.331 685.817  387.976 667.33  423.809 642.24
+            454.74 611.309  479.83 575.476  498.317 535.831  509.639 493.578
+            513.451 450.001  513.451 -450.001  509.639 -493.578  498.317 -535.831
+            479.83 -575.476  454.74 -611.309  423.809 -642.24  387.976 -667.33
+            348.331 -685.817  306.078 -697.139  262.501 -700.951  -262.501 -700.951
+            -306.078 -697.139  -348.331 -685.817  -387.976 -667.33  -423.809 -642.24
+            -454.74 -611.309  -479.83 -575.476  -498.317 -535.831  -509.639 -493.578
+            -513.451 -450.001  -513.451 450.001  -509.639 493.578  -498.317 535.831
+            -479.83 575.476  -454.74 611.309  -423.809 642.24  -387.976 667.33
+            -348.331 685.817  -306.078 697.139  -262.501 700.951  262.501 700.951
+            306.078 697.139))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2030x1730_um
+      (shape (rect F.Cu -1015 -865 1015 865))
+      (shape (rect B.Cu -1015 -865 1015 865))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins U6-4 U5-3 U4-3 U4-3@1 U4-3@2 U4-3@3 U4-2 U4-2@1 U4-2@2 U4-2@3 U3-10 U3-3
+        U2-14 U2-17 U1-10 U1-3 FAN_INPUT1-1 FAN7-1 FAN6-1 FAN5-1 FAN4-1 FAN3-1 FAN2-1
+        FAN1-1 C7-2 C6-2 C5-2 C4-2 C3-2 C2-2 C1-2)
+    )
+    (net +5V
+      (pins U4-1 U4-1@1 U4-1@2 U4-1@3 U3-4 U2-15 U1-4 C1-1)
+    )
+    (net FAN_SPEED_INPUT2
+      (pins U2-7 R2-2 C2-1)
+    )
+    (net FAN_SPEED_INPUT1
+      (pins U2-6 R4-2 C3-1)
+    )
+    (net FAN_SPEED_INPUT3
+      (pins U2-4 R6-2 C4-1)
+    )
+    (net FAN_SPEED_INPUT4
+      (pins U2-5 R8-2 C5-1)
+    )
+    (net FAN_SPEED_INPUT5
+      (pins U2-2 R10-2 C6-1)
+    )
+    (net FAN_SPEED_INPUT6
+      (pins U2-3 R12-2 C7-1)
+    )
+    (net FAN_PWM_CONTROL1
+      (pins U1-1 FAN1-4)
+    )
+    (net Tacho_OUTPUT1
+      (pins R4-1 R3-2 FAN1-3)
+    )
+    (net +12V
+      (pins U4-4 U4-4@1 U4-4@2 U4-4@3 FAN_INPUT1-2 FAN7-2 FAN6-2 FAN5-2 FAN4-2 FAN3-2
+        FAN2-2 FAN1-2)
+    )
+    (net FAN_PWM_CONTROL2
+      (pins U1-2 FAN2-4)
+    )
+    (net Tacho_OUTPUT2
+      (pins R2-1 R1-2 FAN2-3)
+    )
+    (net FAN_PWM_CONTROL3
+      (pins U1-5 FAN3-4)
+    )
+    (net Tacho_OUTPUT3
+      (pins R6-1 R5-2 FAN3-3)
+    )
+    (net FAN_PWM_CONTROL4
+      (pins U1-6 FAN4-4)
+    )
+    (net Tacho_OUTPUT4
+      (pins R8-1 R7-2 FAN4-3)
+    )
+    (net FAN_PWM_CONTROL5
+      (pins U3-1 FAN5-4)
+    )
+    (net Tacho_OUTPUT5
+      (pins R10-1 R9-2 FAN5-3)
+    )
+    (net FAN_PWM_CONTROL6
+      (pins U3-2 FAN6-4)
+    )
+    (net Tacho_OUTPUT6
+      (pins R12-1 R11-2 FAN6-3)
+    )
+    (net FAN_PWM_CONTROL7
+      (pins U3-5 FAN7-4)
+    )
+    (net Tacho_OUTPUT7
+      (pins FAN_INPUT1-3 FAN7-3)
+    )
+    (net +3V3
+      (pins U6-3 U5-1 U2-16 R11-1 R9-1 R7-1 R5-1 R3-1 R1-1)
+    )
+    (net PWM1_OUTPUT
+      (pins U2-13 U1-12)
+    )
+    (net PWM2_OUTPUT
+      (pins U2-11 U1-11)
+    )
+    (net PWM3_OUTPUT
+      (pins U2-21 U1-8)
+    )
+    (net PWM4_OUTPUT
+      (pins U2-22 U1-7)
+    )
+    (net OLED_SCL
+      (pins U6-2 U2-30)
+    )
+    (net OLED_SDA
+      (pins U6-1 U2-29)
+    )
+    (net PWM7_OUTPUT
+      (pins U3-8 U2-26)
+    )
+    (net PWM6_OUTPUT
+      (pins U3-11 U2-25)
+    )
+    (net PWM5_OUTPUT
+      (pins U3-12 U2-24)
+    )
+    (net DHT11_DATA_LINE
+      (pins U5-2 U2-8)
+    )
+    (class kicad_default "" +12V +3V3 +5V DHT11_DATA_LINE FAN_PWM_CONTROL1
+      FAN_PWM_CONTROL2 FAN_PWM_CONTROL3 FAN_PWM_CONTROL4 FAN_PWM_CONTROL5
+      FAN_PWM_CONTROL6 FAN_PWM_CONTROL7 FAN_SPEED_INPUT1 FAN_SPEED_INPUT2
+      FAN_SPEED_INPUT3 FAN_SPEED_INPUT4 FAN_SPEED_INPUT5 FAN_SPEED_INPUT6
+      GND "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(C4-Pad1)"
+      "Net-(C5-Pad1)" "Net-(C6-Pad1)" "Net-(C7-Pad1)" "Net-(FAN_ESP32_HV1-Pad2)"
+      "Net-(FAN_ESP32_HV1-Pad3)" "Net-(FAN_ESP32_HV1-Pad4)" "Net-(FAN_ESP32_HV2-Pad3)"
+      "Net-(FAN_ESP32_HV2-Pad4)" "Net-(FAN_ESP32_HV3-Pad3)" "Net-(FAN_ESP32_HV3-Pad4)"
+      "Net-(FAN_ESP32_HV4-Pad3)" "Net-(FAN_ESP32_HV4-Pad4)" "Net-(FAN_INPUT1-Pad3)"
+      "Net-(FAN_INPUT1-Pad4)" "Net-(FAN_LPWM3_1-Pad1)" "Net-(FAN_LPWM3_1-Pad4)"
+      "Net-(FAN_LPWM3_2-Pad3)" "Net-(FAN_LPWM3_2-Pad4)" "Net-(FAN_LPWM3_3-Pad3)"
+      "Net-(FAN_LPWM3_3-Pad4)" "Net-(R1-Pad1)" "Net-(U1-Pad11)" "Net-(U1-Pad12)"
+      "Net-(U1-Pad7)" "Net-(U1-Pad8)" "Net-(U1-Pad9)" "Net-(U2-Pad1)" "Net-(U2-Pad10)"
+      "Net-(U2-Pad12)" "Net-(U2-Pad18)" "Net-(U2-Pad19)" "Net-(U2-Pad20)"
+      "Net-(U2-Pad23)" "Net-(U2-Pad27)" "Net-(U2-Pad28)" "Net-(U2-Pad9)" "Net-(U3-Pad6)"
+      "Net-(U3-Pad7)" "Net-(U3-Pad9)" OLED_SCL OLED_SDA PWM1_OUTPUT PWM2_OUTPUT
+      PWM3_OUTPUT PWM4_OUTPUT PWM5_OUTPUT PWM6_OUTPUT PWM7_OUTPUT Tacho_OUTPUT1
+      Tacho_OUTPUT2 Tacho_OUTPUT3 Tacho_OUTPUT4 Tacho_OUTPUT5 Tacho_OUTPUT6
+      Tacho_OUTPUT7
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

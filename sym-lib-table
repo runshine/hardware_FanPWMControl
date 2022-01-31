@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name FanPWMControlSym)(type Legacy)(uri ${KIPRJMOD}/FanPWMControlSym.lib)(options "")(descr ""))
+)
